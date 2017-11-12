@@ -208,6 +208,7 @@ ul.todo li .buttons button.complete svg .fill{
 ul.todo#completed{
     position: relative;
     padding: 60px 0 0 45px;
+    opacity: 0.5;
 }
 
 ul.todo#completed:before{
