@@ -14,7 +14,7 @@ document.getElementById('add').addEventListener('click', function () {
     addItem(value);
   }
 });
-
+// Добавление с помощью Enter
 document.getElementById('item').addEventListener('keydown', function (e) {
   var value = this.value;
   if (e.code === 'Enter' && value) {
@@ -47,7 +47,7 @@ function renderTodoList() {
 function dataObjectUpdated() {
   localStorage.setItem('todoList', JSON.stringify(data));
 }
-
+// Удаление
 function removeItem() {
   var item = this.parentNode.parentNode;
   var parent = item.parentNode;
@@ -64,7 +64,7 @@ function removeItem() {
 
   parent.removeChild(item);
 }
-
+// Выполненные задания
 function completeItem() {
   var item = this.parentNode.parentNode;
   var parent = item.parentNode;
@@ -87,7 +87,7 @@ function completeItem() {
   target.insertBefore(item, target.childNodes[0]);
 }
 
-
+//Добавление
 function addItemToDOM(text, completed) {
   var list = (completed) ? document.getElementById('completed') : document.getElementById('todo');
 
