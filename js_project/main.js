@@ -14,7 +14,6 @@ document.getElementById('add').addEventListener('click', function () {
     addItem(value);
   }
 });
-
 // Добавление с помощью Enter
 document.getElementById('item').addEventListener('keydown', function (e) {
   var value = this.value;
